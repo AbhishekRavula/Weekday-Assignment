@@ -1,23 +1,18 @@
 .body-container {
-    display: flex;
-    gap: 50px;
-    flex-direction: column;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
 }
 
 .job-filters-container {
-    min-height: 100px;
-    background-color: pink;
+  min-height: 100px;
+  background-color: pink;
 }
 
 .jobs-list-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.job-item {
-    height: 500px;
-    background-color: pink;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }

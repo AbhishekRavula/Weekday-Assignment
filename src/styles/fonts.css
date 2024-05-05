@@ -1,0 +1,27 @@
+.lexend-light {
+  font-family: "Lexend", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+}
+
+.lexend-medium {
+  font-family: "Lexend", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+}
+
+.lexend-regular {
+  font-family: "Lexend", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.lexend-semibold {
+  font-family: "Lexend", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+}

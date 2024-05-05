@@ -1,0 +1,112 @@
+.job-item-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 550px;
+  background-color: pink;
+  border-radius: 20px !important;
+  padding: 5px;
+}
+
+.job-item-header-container {
+  display: flex;
+  gap: 10px;
+}
+
+.job-item-company-name {
+  color: #8b8b8b;
+  font-size: 14px !important;
+}
+
+.job-item-role {
+  font-size: 14px !important;
+  margin-bottom: 4px;
+}
+
+.job-item-location {
+  font-size: 10px !important;
+}
+
+.job-item-salary {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  font-size: 14px !important;
+}
+
+.job-item-body-container {
+  mask-image: linear-gradient(
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.job-item-about-company {
+  font-size: 16px !important;
+}
+
+.job-item-about-us {
+  font-size: 14px !important;
+}
+
+.job-item-description {
+  font-size: 14px !important;
+  white-space: pre-wrap;
+  height: 180px;
+}
+
+.job-item-view-job {
+  font-size: 14px !important;
+  color: rgb(73, 67, 218);
+  margin-top: -20px !important;
+  text-align: center;
+}
+
+.job-item-experience-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.job-item-minimum-experience {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px !important;
+}
+
+.job-item-posted {
+  margin-bottom: 10px;
+  border: 1px solid rgb(230, 230, 230) !important;
+  box-shadow: rgba(6, 6, 6, 0.05) 0px 2px 6px 0px;
+}
+
+.job-item-minimum-experience-label {
+  color: #8b8b8b;
+  font-size: 14px !important;
+}
+
+.job-item-actions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.job-item-easy-apply-button {
+  background-color: rgb(85, 239, 196) !important;
+  border-radius: 8px !important;
+  color: black !important;
+  text-transform: none !important;
+}
+
+.job-item-refferal-button {
+  background-color: rgb(73, 67, 218) !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+}
+
+.MuiChip-label {
+  font-size: 10px;
+}
+
+.MuiCardContent-root {
+  padding-bottom: 0px !important;
+}
