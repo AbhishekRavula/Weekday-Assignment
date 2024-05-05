@@ -101,6 +101,7 @@
   background-color: rgb(73, 67, 218) !important;
   border-radius: 8px !important;
   text-transform: none !important;
+  margin-left: 0px !important;
 }
 
 .MuiChip-label {
