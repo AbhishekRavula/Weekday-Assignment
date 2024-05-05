@@ -6,10 +6,10 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Chip from "@mui/material/Chip";
-import "./JobItem.css";
+import "./JobCard.css";
 import "../../styles/fonts.css";
 
-const JobItem = ({ job, index }: { job: any; index: any }) => {
+const JobCard = ({ job, index }: { job: any; index: any }) => {
   return (
     <Card className="job-item-container" sx={{ boxShadow: 3 }}>
       <CardContent>
@@ -90,4 +90,4 @@ const JobItem = ({ job, index }: { job: any; index: any }) => {
   );
 };
 
-export default JobItem;
+export default JobCard;
