@@ -8,8 +8,9 @@ import Typography from "@mui/material/Typography";
 import Chip from "@mui/material/Chip";
 import "./JobCard.css";
 import "../../styles/fonts.css";
+import { Job } from "../../features/searchJobs/searchJobs.slice";
 
-const JobCard = ({ job, index }: { job: any; index: any }) => {
+const JobCard = ({ job }: { job: Job }) => {
   return (
     <Card className="job-item-container" sx={{ boxShadow: 3 }}>
       <CardContent>
@@ -20,21 +21,23 @@ const JobCard = ({ job, index }: { job: any; index: any }) => {
           size="small"
         />
         <Box className="job-item-header-container">
-          <Box>Lg</Box>
+          <Box>
+            <img src={job.logoUrl || ""} alt="logo" width={30} height={30} />
+          </Box>
           <Box>
             <Typography className="job-item-company-name lexend-medium">
-              CodesBrain
+              {job.companyName}
             </Typography>
             <Typography className="job-item-role lexend-light">
-              React Native
+              {job.jobRole}
             </Typography>
             <Typography className="job-item-location exend-regular">
-              Bengaluru
+              {job.location}
             </Typography>
           </Box>
         </Box>
         <Typography className="job-item-salary lexend-light">
-          Estimated Salary: 24 - 40 LPA
+          Estimated Salary: {job.minJdSalary} - {job.minJdSalary} LPA
         </Typography>
         <Box className="job-item-body-container">
           <Typography className="job-item-about-company lexend-regular">
@@ -44,14 +47,7 @@ const JobCard = ({ job, index }: { job: any; index: any }) => {
             About Us
           </Typography>
           <Typography className="job-item-description lexend-light">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
-            delectus ullam facilis, sit sed numquam a beatae, accusamus,
-            voluptatibus praesentium obcaecati eaque asperiores pariatur magnam
-            iusto cupiditate impedit porro accusantium? Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Blanditiis delectus ullam
-            facilis, sit sed numquam a beatae, accusamus, voluptatibus
-            praesentium obcaecati eaque asperiores pariatur magnam iusto
-            cupiditate impedit porro accusantium?
+            {job.jobDetailsFromCompany}
           </Typography>
         </Box>
         <Typography className="job-item-view-job lexend-light">
@@ -62,7 +58,7 @@ const JobCard = ({ job, index }: { job: any; index: any }) => {
             Minimum Experience
           </Typography>
           <Typography className="job-item-minimum-experience lexend-light">
-            2 Years
+            {job.minExp} Years
           </Typography>
         </Box>
       </CardContent>
